@@ -1,0 +1,8 @@
+# A test that imports a module leaves bytecode beside it. The launcher sets
+# PYTHONDONTWRITEBYTECODE=1, but `python3 -I` ignores it, and a plain
+# `pytest` run from a shell is not the launcher. Without this line a
+# `git add -A` commits .pyc files.
+__pycache__/
+*.pyc
+.pytest_cache/
+out/
