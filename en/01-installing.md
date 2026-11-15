@@ -18,11 +18,10 @@ Esc. Pick the USB stick.
 Raye starts with Secure Boot on, there is nothing to change in the
 computer's settings.
 
-## 3. Try or install
+## 3. Install
 
-A window lets you **try** Raye without touching the computer, or
-**install** it. Trying is a good way to check Wi-Fi, sound and the screen
-before you decide.
+The stick starts the installer. Trying Raye without installing it is not
+available yet: it is coming in a future update.
 
 ## 4. The installer, step by step
 

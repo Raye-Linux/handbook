@@ -18,11 +18,10 @@ F9 (HP), F8 (ASUS) ou Échap. Choisissez la clé USB.
 Raye démarre avec le Secure Boot activé, vous n'avez rien à changer
 dans les réglages de l'ordinateur.
 
-## 3. Essayer ou installer
+## 3. Installer
 
-Une fenêtre vous propose d'**essayer** Raye sans rien toucher à
-l'ordinateur, ou de l'**installer**. Essayer, c'est utile pour voir si le
-Wi-Fi, le son et l'écran fonctionnent avant de vous décider.
+La clé lance l'installation. Essayer Raye sans l'installer n'est pas
+encore possible : ça arrive dans une prochaine mise à jour.
 
 ## 4. Les étapes de l'installation
 
