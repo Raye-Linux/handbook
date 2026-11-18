@@ -60,7 +60,7 @@ avoir été arrêté correctement d'abord.
 
 ## Ensuite
 
-Avec deux systèmes sur l'ordinateur, un menu s'affiche **dix secondes** à
+Avec deux systèmes sur l'ordinateur, un menu s'affiche **trois secondes** à
 chaque démarrage, avec Raye et Windows. Choisissez, ou attendez et Raye
 démarre. Avec Raye seul, ce menu reste caché : c'est pourquoi vous ne
 l'avez peut-être jamais vu.

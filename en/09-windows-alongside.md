@@ -56,7 +56,7 @@ is the whole reason Windows has to have been shut down properly first.
 
 ## Afterwards
 
-With two systems on the computer, a menu shows for **ten seconds** at
+With two systems on the computer, a menu shows for **three seconds** at
 every start, with Raye and Windows in it. Pick one, or wait and Raye
 starts. With Raye alone that menu stays hidden, which is why you may
 never have seen it.
