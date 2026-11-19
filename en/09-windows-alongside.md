@@ -35,8 +35,7 @@ not been measured.
 
 ## The disk page
 
-This page of setup is in English even if you chose French - see
-[What this beta still gets wrong](07-this-beta.md). Three choices:
+The choices it offers:
 
 - **Erase disk** - Raye alone. Already selected, so do not leave it by
   accident.
@@ -45,9 +44,13 @@ This page of setup is in English even if you chose French - see
   to decide how much Windows keeps and how much Raye gets.
 - **Replace a partition** - puts Raye in place of one partition and
   deletes what was on it.
+- **Replace and keep my files** - puts Raye in place of the other
+  system and brings its Desktop, Documents, Downloads, Music, Pictures and
+  Videos into your new account. Every file is copied and checked first: if
+  a single one fails, the other system is not deleted.
 
 You cannot carve partitions by hand here: this installer does not offer
-it. If the layout you need is not one of those three, it is not a Raye
+it. If the layout you need is not one of those, it is not a Raye
 thing to do yet.
 
 Raye uses the EFI partition Windows already made rather than adding one.

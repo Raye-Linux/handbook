@@ -251,7 +251,9 @@ def test_the_free_space_figure_is_the_one_the_installer_demands():
     assert m, "welcomeq.conf no longer declares requiredStorage"
     gb = str(int(float(m.group(1))))
     for lang, name, unit in (("en", "01-installing.md", "GB"),
-                             ("fr", "01-installer.md", "Go")):
+                             ("fr", "01-installer.md", "Go"),
+                             ("en", "11-chromebooks.md", "GB"),
+                             ("fr", "11-chromebooks.md", "Go")):
         page = (ROOT / lang / name).read_text(encoding="utf-8")
         assert f"{gb} {unit}" in page, (
             f"{lang}/{name} never says {gb} {unit}, which is what the installer "
@@ -276,7 +278,7 @@ def test_manual_partitioning_really_is_off():
     assert modes, ("rayedisk_core.py no longer declares MODES, so what the "
                    "disk page can be told to do was not read")
     names = re.findall(r"\"([a-z-]+)\"", modes.group(1))
-    assert names and set(names) <= {"erase", "shrink", "free", "replace"}, (
+    assert names and set(names) <= {"erase", "shrink", "free", "replace", "keep"}, (
         f"the disk module takes {names}: a choice the dual-boot chapter does "
         f"not describe")
 
@@ -399,6 +401,27 @@ def test_ctrl_shift_esc_opens_what_the_page_says():
     for lang, name, row in (("en", "02-first-steps.md", f"| Ctrl + Shift + Esc | {names['Name']} |"),
                             ("fr", "02-premiers-pas.md", f"| Ctrl + Maj + Échap | {names['Name[fr]']} |")):
         assert row in page(lang, name), f"{lang}/{name} has no row {row!r}"
+
+
+def test_the_chromebook_pages_give_the_same_commands():
+    """Someone types these on a machine that may not start again if a line
+    is wrong. The French page is a translation, so its commands are the
+    English ones, character for character, in the same order."""
+    blocks = {}
+    for lang in ("en", "fr"):
+        text = (ROOT / lang / "11-chromebooks.md").read_text(encoding="utf-8")
+        blocks[lang] = [line.strip() for line in text.splitlines()
+                        if line.startswith("    ") and not line.startswith("     ")]
+        ids = set(ANCHOR.findall(text))
+        # the sound notice of a Chromebook opens the page at #sound
+        assert {"keyboard", "sound"} <= ids, f"{lang}/11-chromebooks.md lacks {{'keyboard', 'sound'}} - {ids}"
+    assert blocks["en"], "the Chromebook page has no command at all"
+    assert blocks["en"] == blocks["fr"], (
+        "the two Chromebook pages do not give the same commands: "
+        f"{set(blocks['en']) ^ set(blocks['fr'])}")
+    script = [b for b in blocks["en"] if "firmware-util.sh" in b]
+    assert script == ["cd; curl -LOf https://mrchromebox.tech/firmware-util.sh "
+                      "&& sudo bash firmware-util.sh"], script
 
 
 def test_updates_are_said_to_install_while_you_work():

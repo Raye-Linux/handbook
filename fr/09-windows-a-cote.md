@@ -36,9 +36,7 @@ lui-même finit par occuper n'a pas été mesuré.
 
 ## La page du disque
 
-Cette page de l'installation est en anglais même si vous avez choisi le
-français - voir [Ce que cette bêta fait encore mal](07-cette-beta.md).
-Trois choix :
+Les choix proposés :
 
 - **Erase disk** (effacer le disque) - Raye tout seul. Déjà sélectionné :
   ne le laissez pas par distraction.
@@ -48,10 +46,15 @@ Trois choix :
   et ce que Raye reçoit.
 - **Replace a partition** (remplacer une partition) - met Raye à la place
   d'une partition et efface ce qu'elle contenait.
+- **Remplacer et garder mes fichiers** - met Raye à la place de l'autre
+  système et apporte son Bureau, ses Documents, Téléchargements, Musique,
+  Images et Vidéos dans votre nouveau compte. Chaque fichier est d'abord
+  copié et vérifié : s'il en manque un seul, l'autre système n'est pas
+  effacé.
 
 Vous ne pouvez pas découper les partitions à la main ici : cet
 installateur ne le propose pas. Si la disposition dont vous avez besoin
-n'est pas l'un de ces trois choix, Raye ne sait pas encore la faire.
+n'est pas l'un de ces choix, Raye ne sait pas encore la faire.
 
 Raye utilise la partition EFI que Windows a déjà créée au lieu d'en
 ajouter une. Le rétrécissement, lui, réécrit bien la taille de la
