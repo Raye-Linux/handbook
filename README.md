@@ -4,10 +4,10 @@ How to install, use and fix Raye Linux, written for people coming from
 Windows. Short pages, plain words, no terminal unless there is really no
 other way.
 
-This handbook is the one for **Raye Linux 0.5 Beta Alpenglow** - the release in `VERSION`,
+This handbook is the one for **Raye Linux 1.0 Beta Brocken** - the release in `VERSION`,
 which mirrors `iso/VERSION`. Nothing else here repeats the number.
 
-Ce manuel est celui de **Raye Linux 0.5 Bêta Alpenglow**.
+Ce manuel est celui de **Raye Linux 1.0 Bêta Brocken**.
 
 | | Français | English |
 |---|---|---|
