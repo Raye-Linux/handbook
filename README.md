@@ -21,6 +21,7 @@ Ce manuel est celui de **Raye Linux 1.0 Bêta Brocken**.
 | What Raye does not do yet | [Ce que Raye ne fait pas (encore)](fr/08-not-in-raye.md) | [What Raye does not do (yet)](en/08-not-in-raye.md) |
 | Installing next to Windows | [Installer à côté de Windows](fr/09-windows-a-cote.md) | [Installing next to Windows](en/09-windows-alongside.md) |
 | For developers | [Pour les développeurs](fr/10-pour-les-developpeurs.md) | [For developers](en/10-for-developers.md) |
+| Chromebooks | [Installer sur un Chromebook](fr/11-chromebooks.md) | [Installing on a Chromebook](en/11-chromebooks.md) |
 
 Testing the beta: read **Reporting a problem** before you need it, and
 **What this beta still gets wrong** when something breaks - your problem
