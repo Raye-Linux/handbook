@@ -4,10 +4,11 @@ How to install, use and fix Raye Linux, written for people coming from
 Windows. Short pages, plain words, no terminal unless there is really no
 other way.
 
-This handbook is the one for **Raye Linux 1.0 Beta 2** - the release in `VERSION`,
+This handbook is the one for **Raye Linux 1.0 Beta 2**, named Sundog (the system
+calls itself Raye Linux 1.0 Beta Sundog) - the release in `VERSION`,
 which mirrors `iso/VERSION`. Nothing else here repeats the number.
 
-Ce manuel est celui de **Raye Linux 1.0 Bêta 2**.
+Ce manuel est celui de **Raye Linux 1.0 Bêta 2**, nommée Sundog.
 
 | | Français | English |
 |---|---|---|
