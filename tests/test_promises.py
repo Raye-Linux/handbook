@@ -30,8 +30,10 @@ PAGES = sorted(p for p in (ROOT / "en").glob("*.md")) + \
         sorted(p for p in (ROOT / "fr").glob("*.md"))
 README = ROOT / "README.md"
 LINKED = PAGES + [README]
-# the notes of the release in VERSION: "0.5 Beta" -> release-notes-0.5-beta.md
-SLUG = (ROOT / "VERSION").read_text().strip().lower().replace(" ", "-")
+# the notes of the release in VERSION: "0.5 Beta" -> release-notes-0.5-beta.md;
+# every beta of a series shares its notes, as it shares its download address
+# (iso/tools/release_name.py series): "1.0 Beta 2" -> release-notes-1.0-beta.md
+SLUG = re.sub(r"-beta-\d+$", "-beta", (ROOT / "VERSION").read_text().strip().lower().replace(" ", "-"))
 NOTES_EN = f"iso/docs/release-notes-{SLUG}.md"
 NOTES_FR = f"iso/docs/release-notes-{SLUG}.fr.md"
 

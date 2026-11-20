@@ -30,7 +30,7 @@ PAGES = sorted(p for p in ROOT.rglob("*.md") if p.name != "README.md")
 
 
 def test_version_is_the_beta():
-    assert re.fullmatch(r"\d+(?:\.\d+)+ Beta", VERSION), VERSION
+    assert re.fullmatch(r"\d+(?:\.\d+)+ Beta(?: \d+)?", VERSION), VERSION
 
 
 def test_readme_says_the_release_in_english():
