@@ -97,7 +97,7 @@ def test_mirrors_the_iso_version():
 # And loaded by PATH, not by name: python3 -I implies -P, which keeps
 # the script's own directory out of sys.path, so `import test_promises`
 # raises ModuleNotFoundError (measured, CPython 3.13.5).
-SIDECARS = ("test_promises.py",)
+SIDECARS = ("test_promises.py", "test_hyprland_guide.py")
 
 
 def run(cases):

@@ -23,6 +23,7 @@ Ce manuel est celui de **Raye Linux 1.0 Bêta 2**, nommée Sundog.
 | Installing next to Windows | [Installer à côté de Windows](fr/09-windows-a-cote.md) | [Installing next to Windows](en/09-windows-alongside.md) |
 | For developers | [Pour les développeurs](fr/10-pour-les-developpeurs.md) | [For developers](en/10-for-developers.md) |
 | Chromebooks | [Installer sur un Chromebook](fr/11-chromebooks.md) | [Installing on a Chromebook](en/11-chromebooks.md) |
+| Hyprland | [Hyprland sur Raye : tout changer](fr/12-hyprland.md) | [Hyprland on Raye: change everything](en/12-hyprland.md) |
 
 Testing the beta: read **Reporting a problem** before you need it, and
 **What this beta still gets wrong** when something breaks - your problem
