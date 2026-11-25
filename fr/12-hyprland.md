@@ -22,9 +22,10 @@ n'y touchez pas.
 
 ## Ouvrir son fichier, l'appliquer, revenir
 
-Dans un terminal, utilisez la commande `raye-hyprland-config`, ou dans
-**Paramètres → Personnalisation → Environnement de bureau** appuyez sur
-**Ouvrir mes réglages Hyprland**.
+Dans un terminal, utilisez la commande `raye-hyprland-config`, ou allez dans
+**Paramètres → Personnalisation → Environnement de bureau** et appuyez sur
+**Ouvrir mes réglages Hyprland**. Le bouton **Guide Hyprland** juste à côté
+ouvre cette page.
 
     raye-hyprland-config open     # crée le fichier si besoin, l'ouvre
     raye-hyprland-config reload   # l'applique tout de suite

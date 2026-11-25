@@ -20,9 +20,10 @@ written by Raye at each sign-in: leave them alone.
 
 ## Open your file, apply it, go back
 
-Open a terminal and use the `raye-hyprland-config` command, or in
-**Settings → Personalization → Desktop environment** press **Open my
-Hyprland settings**.
+Open a terminal and use the `raye-hyprland-config` command, or go to
+**Settings → Personalization → Desktop environment** and press
+**Open my Hyprland settings**. The **Hyprland guide** button next to it
+opens this page.
 
     raye-hyprland-config open     # makes the file if needed, opens it
     raye-hyprland-config reload   # applies it now
