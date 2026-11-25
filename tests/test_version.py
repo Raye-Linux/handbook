@@ -29,8 +29,9 @@ FRENCH = VERSION.replace("Beta", "Bêta")
 PAGES = sorted(p for p in ROOT.rglob("*.md") if p.name != "README.md")
 
 
-def test_version_is_the_beta():
-    assert re.fullmatch(r"\d+(?:\.\d+)+ Beta(?: \d+)?", VERSION), VERSION
+def test_version_is_a_release():
+    """A beta ("1.0 Beta 2") or a stable release ("1.0")."""
+    assert re.fullmatch(r"\d+(?:\.\d+)+(?: Beta(?: \d+)?)?", VERSION), VERSION
 
 
 def test_readme_says_the_release_in_english():
@@ -45,6 +46,10 @@ def test_readme_says_the_release_in_french():
 
 def test_the_two_languages_are_the_same_release():
     """A French page left on an older release is the drift this prevents."""
+    if "Beta" not in VERSION:
+        # a stable release reads the same in both: once per language
+        assert README.count(f"{PRODUCT} {VERSION}**") >= 2, README
+        return
     english = re.findall(r"%s (\d+(?:\.\d+)+) Beta" % PRODUCT, README)
     french = re.findall(r"%s (\d+(?:\.\d+)+) Bêta" % PRODUCT, README)
     assert english and french, (english, french)
